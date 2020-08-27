@@ -1,4 +1,4 @@
-name: Maven Package and codecov
+name: Maven Package and sonarcloud-scan
 
 on:
   pull_request:
