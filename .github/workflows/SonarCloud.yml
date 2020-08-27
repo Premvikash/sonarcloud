@@ -22,4 +22,7 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: SonarCloud Scan
-      uses: mvn -B org.sonarsource.scanner.maven:sonar
+      uses: mvn -B org.sonarsource.scanner.maven:sonar --file pom.xml
+      
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
